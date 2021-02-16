@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\spatial_computing_workshops"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.shell.windows": ""
+	}
+}
