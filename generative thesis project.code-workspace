@@ -11,6 +11,7 @@
 		}
 	],
 	"settings": {
-		"terminal.integrated.shell.windows": ""
+		"terminal.integrated.shell.windows": "",
+		"python.pythonPath": "C:\\Users\\maxke\\.conda\\envs\\thesis\\python.exe"
 	}
 }
