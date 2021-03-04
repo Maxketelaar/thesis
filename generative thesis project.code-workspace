@@ -12,6 +12,7 @@
 	],
 	"settings": {
 		"terminal.integrated.shell.windows": "",
-		"python.pythonPath": "C:\\Users\\maxke\\.conda\\envs\\thesis\\python.exe"
+		"python.pythonPath": "C:\\Users\\maxke\\.conda\\envs\\thesis\\python.exe",
+		"terminal.integrated.cwd": "C:\\Users\\maxke\\Documents\\GitHub\\thesis_Max_Ketelaar"
 	}
 }
