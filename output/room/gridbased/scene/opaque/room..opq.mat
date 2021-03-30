@@ -1,0 +1,15 @@
+# Created by Honeybee[+] at 2021-03-23 21:00:25
+# www.ladybug.tools
+
+void plastic generic_wall
+0
+0
+5 0.5 0.5 0.5 0.0 0.0
+void plastic generic_roof
+0
+0
+5 0.8 0.8 0.8 0.0 0.0
+void plastic generic_floor
+0
+0
+5 0.2 0.2 0.2 0.0 0.0

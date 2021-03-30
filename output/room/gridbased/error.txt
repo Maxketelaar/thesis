@@ -1,0 +1,18 @@
+**************
+*** PID 21564: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
+**************
+*** PID  7028: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
+**************
+*** PID 16856: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
+**************
+*** PID  9568: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
+**************
+*** PID  6656: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
+**************
+*** PID  8764: rtrace -aa 0.25 -ab 2 -ad 512 -ar 16 -as 128 -dc 0.25 -dj 0.0 -dp 64 -ds 0.5 -dr 0 -dt 0.5 -e error.txt -h -I -lr 4 -lw 0.05 -ss 0.0 -st 0.85 room.oct
+
