@@ -1,14 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "..\\spatial_computing_workshops"
-		},
-		{
 			"path": "."
 		},
-		{
-			"path": "..\\topogenesis"
-		}
 	],
 	"settings": {
 		"terminal.integrated.shell.windows": "",
