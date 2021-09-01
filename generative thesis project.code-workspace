@@ -3,6 +3,12 @@
 		{
 			"path": "."
 		},
+		{
+			"path": "..//Generative_Solar-Climatic_Configuration"
+		},
+		{
+			"path": "..//topogenesis"
+		},
 	],
 	"settings": {
 		"terminal.integrated.shell.windows": "",
