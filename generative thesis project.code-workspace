@@ -8,7 +8,7 @@
 		},
 		{
 			"path": "..//topogenesis"
-		},
+		}
 	],
 	"settings": {
 		"terminal.integrated.shell.windows": "",
