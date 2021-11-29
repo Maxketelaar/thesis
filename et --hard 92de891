@@ -1,0 +1,29 @@
+[33m75f3151[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to 75f315189d9b3a79ceff0e2d6e62f1c4004b19ab
+[33m92de891[m HEAD@{1}: reset: moving to 92de89170f2fc85c51ff3abac86799d844d292ed
+[33mae9c5f1[m HEAD@{2}: reset: moving to ae9c5f1f359a19b106e35ea4890e85fcf3fa22bb
+[33mdc8eb12[m HEAD@{3}: revert: Revert "P4_commit"
+[33mae9c5f1[m HEAD@{4}: commit: P4 files
+[33m92de891[m HEAD@{5}: commit: P4_commit
+[33m75f3151[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{6}: commit: -
+[33mafd5580[m HEAD@{7}: commit: interdependencies added
+[33m645bb38[m HEAD@{8}: commit: added TODO
+[33m7846766[m HEAD@{9}: commit: Added compactness into class
+[33mc24997f[m HEAD@{10}: commit: Added Vox Selection, daylight, street vis
+[33m0ce46a3[m HEAD@{11}: commit: sept 2021
+[33m749477b[m HEAD@{12}: commit: restructuring folders
+[33m3a00869[m HEAD@{13}: commit: placeholder_name updated
+[33m41fb68a[m HEAD@{14}: commit: rubik's cube initial
+[33m3028718[m HEAD@{15}: commit: RADIANCE testing
+[33mfff0f4d[m HEAD@{16}: commit: license added
+[33mede23f0[m HEAD@{17}: commit: removed old file
+[33ma5fd62c[m HEAD@{18}: commit: matrices added
+[33md733f7f[m HEAD@{19}: commit: MCDA testing march 18
+[33m4b7600e[m HEAD@{20}: commit: Added decision variables and objective functions
+[33m7dcf65f[m HEAD@{21}: commit: Added decision variables, drawio board (empty)
+[33m0e44c14[m HEAD@{22}: commit: workspace added
+[33m0a51af1[m HEAD@{23}: commit: context improved
+[33mba1ab53[m HEAD@{24}: commit: joe
+[33m2be48e3[m HEAD@{25}: commit: context
+[33mdd5a925[m HEAD@{26}: commit: Update generative thesis project.code-workspace
+[33mc40a26c[m HEAD@{27}: commit: initial test
+[33mff4d8bf[m HEAD@{28}: commit (initial): Initial commit
