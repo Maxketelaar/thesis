@@ -14,6 +14,7 @@ dependencies:
   - python=3.8.5
   - rtree=0.9.4
   - trimesh=3.8.12
+  - pygmo=2.18.0
   - pip:
       - ipyvtk-simple==0.1.3
       - itkwidgets==0.32.0

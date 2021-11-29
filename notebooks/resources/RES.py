@@ -43,7 +43,7 @@ def reshape_and_store_to_lattice(values_list, envelope_lattice):
 def construct_graph(reference_vectors, hitface_id, ray_id, envelope_lattice, faces_numb):
 
     # voxel centroids
-    vox_cts = envelope_lattice.centroids
+    vox_cts = envelope_lattice.centroids_threshold(-0.1)
 
     # initialize array for inter-dependencies of voxels
     G = np.zeros((len(vox_cts),len(vox_cts),len(reference_vectors)))
