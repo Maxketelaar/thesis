@@ -550,10 +550,10 @@ def crit_2_DL(variables, ref_lattice, vector, magnitude, environment):
     return crit_2_DL_potential, crit_2_pervox
 
 
-def crit_3_rc(variables, ref_lattice):
+def crit_3_RC(variables, ref_lattice):
     # create the current configuration as a lattice
-    curr_envelope = reshape_and_store_to_lattice(variables.astype('bool'), ref_lattice)
-    
+    curr_envelope = reshape_and_store_to_lattice(np.array(variables).astype('bool'), ref_lattice)
+
     # flatten the envelope
     envlp_voxs = curr_envelope.flatten()
 
@@ -592,7 +592,29 @@ def crit_3_rc(variables, ref_lattice):
     R_ref = (6*(l_ref**2))/V
 
     # dimensionless indicator heat retention potential
-    crit_3_RC = (A_exterior/V)/R_ref
+    crit_3_rc = (A_exterior/V)/R_ref
     
-    return crit_3_RC
+    return crit_3_rc
 
+def crit_4_FSI(variables, ref_lattice, target):
+    # calculate area of voxel
+    vox_area = ref_lattice.unit[0] * ref_lattice.unit[1]
+
+    # calculate area of the building plot
+    site_area = ref_lattice.shape[0]*ref_lattice.shape[1] * vox_area
+
+    # count number of active voxels
+    vox_active = np.count_nonzero(variables)
+
+    # calculate area of configuration
+    config_area = vox_active * vox_area
+
+    # calculate achieved FSI
+    FSI = config_area / site_area
+
+    # calculate difference between achieved FSI and required FSI
+    diff = FSI - target
+
+    crit_4_fsi = diff / (diff + target) + 1
+    
+    return crit_4_fsi
