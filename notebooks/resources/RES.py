@@ -482,7 +482,8 @@ def construct_horizontal_mesh(lat,unit):
 
 def crit_1_PV(variables, ref_lattice, vector, magnitude, environment):
     # first we create the lattice for the current configuration
-    lattice = reshape_and_store_to_lattice(variables, ref_lattice)
+    vars = np.around(variables).astype(int) # I need this to not get errors with zero-size arrays
+    lattice = reshape_and_store_to_lattice(vars, ref_lattice)
 
     # create vertical and horizontal test points, meshes, and normals
     horizontal_meshes, horizontal_test_points, horizontal_test_point_normals = construct_horizontal_mesh(lattice,lattice.unit)
@@ -517,7 +518,8 @@ def crit_1_PV(variables, ref_lattice, vector, magnitude, environment):
 
 def crit_2_DL(variables, ref_lattice, vector, magnitude, environment):
     # first we create the lattice for the current configuration
-    lattice = reshape_and_store_to_lattice(variables, ref_lattice)
+    vars = np.around(variables).astype(int) # I need this to not get errors with zero-size arrays
+    lattice = reshape_and_store_to_lattice(vars, ref_lattice)
 
     # create vertical and horizontal test points, meshes, and normals
     horizontal_meshes, horizontal_test_points, horizontal_test_point_normals = construct_horizontal_mesh(lattice,lattice.unit)
@@ -552,7 +554,8 @@ def crit_2_DL(variables, ref_lattice, vector, magnitude, environment):
 
 def crit_3_RC(variables, ref_lattice):
     # create the current configuration as a lattice
-    curr_envelope = reshape_and_store_to_lattice(np.array(variables).astype('bool'), ref_lattice)
+    vars = np.around(variables).astype(int) # I need this to not get errors with zero-size arrays
+    curr_envelope = reshape_and_store_to_lattice(np.array(vars).astype('bool'), ref_lattice)
 
     # flatten the envelope
     envlp_voxs = curr_envelope.flatten()
@@ -598,13 +601,14 @@ def crit_3_RC(variables, ref_lattice):
 
 def crit_4_FSI(variables, ref_lattice, target):
     # calculate area of voxel
+    vars = np.around(variables).astype(int) # I need this to not get errors with zero-size arrays
     vox_area = ref_lattice.unit[0] * ref_lattice.unit[1]
 
     # calculate area of the building plot
     site_area = ref_lattice.shape[0]*ref_lattice.shape[1] * vox_area
 
     # count number of active voxels
-    vox_active = np.count_nonzero(variables)
+    vox_active = np.count_nonzero(vars)
 
     # calculate area of configuration
     config_area = vox_active * vox_area
@@ -616,5 +620,5 @@ def crit_4_FSI(variables, ref_lattice, target):
     diff = FSI - target
 
     crit_4_fsi = diff / (diff + target) + 1
-    
+
     return crit_4_fsi
