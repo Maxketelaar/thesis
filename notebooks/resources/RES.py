@@ -616,9 +616,7 @@ def crit_4_FSI(variables, ref_lattice, target):
     # calculate achieved FSI
     FSI = config_area / site_area
 
-    # calculate difference between achieved FSI and required FSI
-    diff = FSI - target
-
-    crit_4_fsi = diff / (diff + target) + 1
+    # calculate difference between achieved FSI and target FSI. Equals 1 when target is reached, achieves diminishing returns afterwards
+    crit_4_fsi = 2*FSI / (FSI + target)
 
     return crit_4_fsi
